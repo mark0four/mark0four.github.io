@@ -4,14 +4,29 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/path/to/tailwind.css" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
     <title>我的blog</title>
+    <script src="./side.js"></script>
 </head>
 
 <body>
-    <div class="all">
-        <div class="topbar">
+    <div class="all" id="all">
+        <div class="side" id="mySidenav">
+            <div class="top">
+                <div class="change-light">
+                    <div class="day" onclick="day()"></div>
+                    <div class="night" onclick="night()"></div>
+                </div>
+                <div class="list-img">
+                    <div class="tu"></div>
+                </div>
+                <div id="wode">小鹤</div>
+            </div>
+            <div class="butt">
+            </div>
+        </div>
+        <div class="sides" id="sides" onclick="side()"></div>
+        <div class="topbar" id="topbar">
             <div class="left">
                 <div class="icon">
                     <img src="./彩纸 千纸鹤.png" alt="">
@@ -21,7 +36,7 @@
                 </div>
             </div>
             <div class="right">
-                <div class="menu">
+                <div class="menu" onclick="side()">
                     <img src="./menu.png" alt="">
                 </div>
             </div>
